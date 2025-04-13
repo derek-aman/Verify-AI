@@ -3,7 +3,12 @@ const aiRoutes = require('./routes/ai.routes');
 const cors = require('cors')
 
 const app = express()
-app.use(cors())
+
+app.use(cors({
+    origin: process.env.FRONTEND_URL, 
+    methods: ['GET', 'POST'],
+    credentials: true,
+  }))
 
 app.use(express.json())
 
@@ -13,4 +18,4 @@ app.get("/", (req, res) => {
 
 app.use("/ai", aiRoutes);
 
-module.exports = app;  // Change from `export default app;` to `module.exports = app;`
+module.exports = app;  
