@@ -64,7 +64,7 @@ function App() {
     <div className="app scrollable">
       <h1 className="header gradient-text">Let's VERIFY AI</h1>
       <main className="container">
-        <div className="section left">
+        <div className="section right">
           <div className="section-label"> AI Verdict</div>
           <div className="verdict-box">
             <Markdown rehypePlugins={[rehypeHighlight]}>{verdict}</Markdown>
@@ -73,7 +73,7 @@ function App() {
           </div>
         </div>
 
-        <div className="section right">
+        <div className="section left">
           <div className="section-label"> Enter News Article</div>
           <div className="code-box">
             <Editor
