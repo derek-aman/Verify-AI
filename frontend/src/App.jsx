@@ -26,7 +26,7 @@ function App() {
   async function analyzeNews() {
     try {
       setLoading(true);
-      const response = await axios.post("https://verify-ai-1.onrender.com", {
+      const response = await axios.post("https://verify-ai-1.onrender.com/ai/get-review", {
         code: newsText
       });
 
