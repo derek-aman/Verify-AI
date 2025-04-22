@@ -1,0 +1,36 @@
+/* Landing.css */
+.landing-container {
+    height: 100vh;
+    background: radial-gradient(ellipse at center, #121212 0%, #1f1f1f 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .landing-title {
+    font-size: 3rem;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .landing-subtitle {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #ccc;
+  }
+  
+  .loading-bar {
+    margin-top: 2rem;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 10px;
+  }
+  
