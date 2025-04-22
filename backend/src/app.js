@@ -13,9 +13,8 @@ app.use((req, res, next) => {
 });
 
 app.use(cors({
-  origin: "https://verify-ai-app.onrender.com/", 
-  methods: ['GET', 'POST'],
-  credentials: true,
+  origin: 'https://verify-ai-app.onrender.com',
+  credentials: true
 }));
 
 
