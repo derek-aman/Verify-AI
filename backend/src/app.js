@@ -13,10 +13,9 @@ app.use((req, res, next) => {
 });
 
 app.use(cors({
-  origin: 'https://verify-ai-app.onrender.com',
+  origin: ['http://localhost:5173', 'https://verify-ai-app.onrender.com'],
   credentials: true
 }));
-
 
 
 
